@@ -5,7 +5,6 @@ using Prestige.Kernel.Authentication.Models;
 
 using System;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
@@ -75,7 +74,7 @@ namespace Prestige.Kernel.Authentication.Implementations
             return new JsonWebTokenPayload
             {
                 Subject = jwt.Subject,
-                Role = jwt.Claims.Single(x => x.Type == ClaimTypes.Role).Value,
+                Claims = jwt.Claims,
                 Expires = jwt.ValidTo
             };
         }

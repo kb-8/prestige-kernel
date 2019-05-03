@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
-using Prestige.Kernel.ExceptionHandler.Constants;
+using Prestige.Kernel.Common.Constants;
 
 using System.Net;
 

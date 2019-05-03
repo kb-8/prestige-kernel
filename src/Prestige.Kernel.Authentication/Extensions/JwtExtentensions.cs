@@ -2,10 +2,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-using Prestige.Kernel.Authentication.Constants;
 using Prestige.Kernel.Authentication.Implementations;
 using Prestige.Kernel.Authentication.Interfaces;
-using Prestige.Kernel.Authentication.Models;
+using Prestige.Kernel.Common.Constants;
+using Prestige.Kernel.Common.Extensions;
+using Prestige.Kernel.Common.Models.Authentication;
 
 namespace Prestige.Kernel.Authentication.Extensions
 {

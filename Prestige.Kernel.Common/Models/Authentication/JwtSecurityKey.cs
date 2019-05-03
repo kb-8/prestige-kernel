@@ -1,7 +1,8 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+
 using System.Text;
 
-namespace Prestige.Kernel.Authentication.Models
+namespace Prestige.Kernel.Common.Models.Authentication
 {
     public static class JwtSecurityKey
     {

@@ -1,4 +1,4 @@
-﻿namespace Prestige.Kernel.Authentication.Constants
+﻿namespace Prestige.Kernel.Common.Constants
 {
     public static class AuthenticationConstants
     {

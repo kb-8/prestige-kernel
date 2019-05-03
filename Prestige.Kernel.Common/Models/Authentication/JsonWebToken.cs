@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Prestige.Kernel.Authentication.Models
+namespace Prestige.Kernel.Common.Models.Authentication
 {
     public class JsonWebToken
     {

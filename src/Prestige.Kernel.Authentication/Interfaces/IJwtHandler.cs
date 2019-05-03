@@ -1,4 +1,4 @@
-﻿using Prestige.Kernel.Authentication.Models;
+﻿using Prestige.Kernel.Common.Models.Authentication;
 
 using System;
 

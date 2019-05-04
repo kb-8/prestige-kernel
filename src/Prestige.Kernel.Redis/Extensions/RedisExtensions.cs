@@ -17,8 +17,8 @@ namespace Prestige.Kernel.Redis.Extensions
                 configuration = serviceProvider.GetService<IConfiguration>();
             }
 
-            IConfigurationSection redisSection = configuration.GetSection(RedisConstants.RedisOptionsConnectionName);
-            RedisOptions options = configuration.GetOptions<RedisOptions>(RedisConstants.RedisOptionsConnectionName);
+            IConfigurationSection redisSection = configuration.GetSection(GlobalConstants.RedisOptionsConnectionName);
+            RedisOptions options = configuration.GetOptions<RedisOptions>(GlobalConstants.RedisOptionsConnectionName);
             services.AddDistributedRedisCache(o =>
             {
                 o.Configuration = options.ConnectionString;

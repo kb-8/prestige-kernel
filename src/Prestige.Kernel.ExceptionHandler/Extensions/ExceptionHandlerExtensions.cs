@@ -20,11 +20,11 @@ namespace Prestige.Kernel.ExceptionHandler.Extensions
                   async context =>
                   {
                       context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                      context.Response.ContentType = ExceptionHandlerConstants.ResponseContentType;
+                      context.Response.ContentType = GlobalConstants.ResponseContentType;
                       IExceptionHandlerFeature ex = context.Features.Get<IExceptionHandlerFeature>();
                       if (ex != null)
                       {
-                          string err = string.Format(ExceptionHandlerConstants.PublicErrorMessageFormat, ex.Error.Message);
+                          string err = string.Format(GlobalConstants.PublicErrorMessageFormat, ex.Error.Message);
 
                           if (isDevelopment)
                           {

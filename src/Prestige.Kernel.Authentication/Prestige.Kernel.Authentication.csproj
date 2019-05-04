@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Prestige.Kernel.Common\Prestige.Kernel.Common.csproj" />
+    <ProjectReference Include="..\Prestige.Kernel.Common\Prestige.Kernel.Common.csproj" />
   </ItemGroup>
 
 </Project>

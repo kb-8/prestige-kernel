@@ -2,7 +2,6 @@
 
 using Prestige.Kernel.Authentication.Interfaces;
 using Prestige.Kernel.Common.Models.Authentication;
-
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prestige.Kernel.Authenticat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prestige.Kernel.ExceptionHandler", "src\Prestige.Kernel.ExceptionHandler\Prestige.Kernel.ExceptionHandler.csproj", "{36FA6162-905D-44F4-8327-43C1C7C890C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestige.Kernel.Redis", "src\Prestige.Kernel.Redis\Prestige.Kernel.Redis.csproj", "{14F1D225-6CA6-47CB-82B8-BAB3055CFCC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prestige.Kernel.Redis", "src\Prestige.Kernel.Redis\Prestige.Kernel.Redis.csproj", "{14F1D225-6CA6-47CB-82B8-BAB3055CFCC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestige.Kernel.Common", "src\Prestige.Kernel.Common\Prestige.Kernel.Common.csproj", "{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prestige.Kernel.Common", "src\Prestige.Kernel.Common\Prestige.Kernel.Common.csproj", "{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prestige.Kernel.Logging", "src\Prestige.Kernel.Logging\Prestige.Kernel.Logging.csproj", "{C26D7066-3531-4313-9664-89537CB6A470}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26D7066-3531-4313-9664-89537CB6A470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26D7066-3531-4313-9664-89537CB6A470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26D7066-3531-4313-9664-89537CB6A470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26D7066-3531-4313-9664-89537CB6A470}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{36FA6162-905D-44F4-8327-43C1C7C890C2} = {EA39A551-0196-4004-8451-3943A719F543}
 		{14F1D225-6CA6-47CB-82B8-BAB3055CFCC2} = {EA39A551-0196-4004-8451-3943A719F543}
 		{C3AE176F-5D6F-4EB3-87EF-F19EC45B08A8} = {EA39A551-0196-4004-8451-3943A719F543}
+		{C26D7066-3531-4313-9664-89537CB6A470} = {EA39A551-0196-4004-8451-3943A719F543}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B4D74F3-6238-4226-98F6-91BD948C907B}

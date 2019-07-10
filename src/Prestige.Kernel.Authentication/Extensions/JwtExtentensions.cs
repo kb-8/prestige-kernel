@@ -19,7 +19,6 @@ namespace Prestige.Kernel.Authentication.Extensions
                 configuration = serviceProvider.GetService<IConfiguration>();
             }
 
-            IConfigurationSection jwtSection = configuration.GetSection(GlobalConstants.JwtSection);
             JwtOptions options = configuration.GetOptions<JwtOptions>(GlobalConstants.JwtSection);
             services.AddSingleton(options);
             services.AddSingleton<IJwtHandler, JwtHandler>();

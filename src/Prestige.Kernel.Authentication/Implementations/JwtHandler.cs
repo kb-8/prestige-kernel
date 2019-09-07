@@ -2,6 +2,7 @@
 
 using Prestige.Kernel.Authentication.Interfaces;
 using Prestige.Kernel.Common.Models.Authentication;
+
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -34,14 +35,14 @@ namespace Prestige.Kernel.Authentication.Implementations
             };
         }
 
-        public JsonWebToken CreateToken(Guid userId, string role)
+        public JsonWebToken CreateToken(long userId, string email)
         {
             var claims = new Claim[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
                 new Claim(JwtRegisteredClaimNames.UniqueName, userId.ToString()),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim(ClaimTypes.Role, role)
+                new Claim(ClaimTypes.Email, email)
             };
 
             DateTime expires = DateTime.UtcNow.AddMinutes(this.options.ExpiryMinutes);

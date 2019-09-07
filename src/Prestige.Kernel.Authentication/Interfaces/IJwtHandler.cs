@@ -1,12 +1,10 @@
 ﻿using Prestige.Kernel.Common.Models.Authentication;
 
-using System;
-
 namespace Prestige.Kernel.Authentication.Interfaces
 {
     public interface IJwtHandler
     {
-        JsonWebToken CreateToken(Guid userId, string role);
+        JsonWebToken CreateToken(long userId, string email);
 
         JsonWebTokenPayload GetTokenPayload(string accessToken);
     }
